@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>09-读写元素属性21[]</title>
+    <script>
+        window.onload = function(){
+
+            // 1.获取三个元素
+            var oTxt1 = document.getElementById("txt1");
+            var oTxt2 = document.getElementById("txt2");
+            var oSpan = document.getElementById("sp");
+
+            // 2.获取文本的value
+            var  sTxtValue1 = oTxt1.value;//fontSize
+            var  sTxtValue2 = oTxt2.value;//50px;
+
+            // 3.修改span的value
+            // style.fontSize = 50px;
+            // oSpan.style.sTxtValue1 =  sTxtValue2;//无效
+            oSpan.style[sTxtValue1] = sTxtValue2;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" value="fontSize" id="txt1">
+     <input type="text" value="50px" id="txt2">
+     <span id="sp">人民币</span>
+</body>
+</html>

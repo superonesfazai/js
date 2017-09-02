@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>02-条件运算</title>
+    <script>
+
+        window.onload = function(){
+
+            var iNumber = 100;
+            var iTwo = 20;
+            var sStr = "100";
+
+            //等于 == ;只判断内容
+            // if(iNumber == sStr){
+            //     alert("==");
+            // }else{
+            //     alert("不等于");
+            // }
+
+            //全等于 ===; 先判断类型,在判断内容
+            //  if(iNumber === sStr){
+            //     alert("===");
+            // }else{
+            //     alert("不等于");
+            // }
+
+            //且 &&; 有假则假
+            if(iNumber > 10 && iTwo < 10){
+
+                //alert("&&");
+            }else{
+
+               //alert("不满足"); 
+            }
+
+            //或 ||,有真则真
+            if(iNumber > 10 || iTwo < 10){
+
+                // alert("||");
+            }else{
+
+            //    alert("不满足"); 
+            }
+
+            //否 !
+            if(!(iNumber < 10)){
+
+                alert("条件满足");
+            }else{
+               alert("不满足");  
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

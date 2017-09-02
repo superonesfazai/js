@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>01-字符串的操作</title>
+    <script>
+        window.onload = function(){
+            // 1.拼接字符串 +
+            var sName = "张三"
+            var iAge = 28;
+            var iHeight = 175;
+            //alert(sName + iAge +"岁了"+iHeight+"cm");
+
+            //2.类型转换
+            //3.将字符串分割成数组 split()
+            var sArray = "abcedf";
+           var  aArray =  sArray.split("");
+           //alert(aArray);
+
+           //4.截取字符串   开始到结束为止 start --end(不包含)
+           var sStr =  sArray.substring(3,4);
+           //alert(sStr);
+
+           //5.判断时候有某个字符, indexOf();如果有的话 显示角标, 没有就是-1
+           //alert(sArray.indexOf("21"));
+
+            //6.将字符串颠倒 反转
+                //6.1数组有颠倒的方法 reverse
+                //6.2 先将字符串 变成数组
+                //6.3 颠倒数组元素
+                // 6.4 将数组在分割成字符串
+            
+            var aNewArray = sArray.split("");
+            var aSecondArray =  aNewArray.reverse();
+            var sNew = aSecondArray.join(",");
+            
+            //优化写法
+            sNew = sArray.split("").reverse().join(",");
+            alert(sNew);
+
+
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

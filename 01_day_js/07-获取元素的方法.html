@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>07-获取元素的方法</title>
+    <script>
+        // alert('恭喜你点击成功!')
+        window.onload = function(){
+
+            // 1.获取按钮标签
+            var oBtn = document.getElementById("btn");
+            alert(oBtn);
+
+            //  2.监听按钮的点击
+            oBtn.onclick = function(){
+                alert('恭喜你点击成功!')
+            }
+
+        }
+       
+    </script>
+
+   
+</head>
+<body>
+     
+
+     <!-- 
+        2.监听按钮的点击
+
+       
+    -->
+    <input type="button" value="按钮" id="btn"> 
+</body>
+</html>
+
+

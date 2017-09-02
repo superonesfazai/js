@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片轮播器的功能实现</title>
+
+    <style>
+
+        /*初始化*/
+        ul,li{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*1.设置图片的外边框*/
+        .picbox{
+
+            width: 1000px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px auto 0;
+            background-color: lightgray;
+
+            overflow: hidden;
+            position:relative;
+            
+
+        }
+        /*2.设置列表的属性*/
+        .list{
+
+            list-style: none;
+            width: 2000px;/*暂时写1000px,修改为2000是为了轮播做准备*/
+            height: 200px;
+
+            position: absolute;
+            left: 0;
+            top:0;
+        }
+        /*3.设置li标签的属性*/
+
+        .list li{
+            width: 180px;
+            height: 180px;
+            margin: 10px;
+            float: left;
+        }
+
+        /*4.设置按钮边框的属性*/
+        .btn{
+            width: 1000px;
+            height: 50px;
+            background: pink;
+            margin: 50px auto 0;
+
+            position: relative;
+
+        }
+        /*5.设置左右两个按钮的大小位置等*/
+        .left,.right{
+
+            width: 30px;
+            height: 30px;
+            background-color: gold;
+
+            line-height: 30px;
+            text-align: center;
+            font-family: "Arial";
+            font-size: 30px;
+
+            /*裁剪圆角*/
+            border-radius: 15px;
+            cursor: pointer;
+            opacity: 0.5;
+
+            /*定位*/
+            position: absolute;
+            left:-40px;
+            top:124px;
+        }
+
+        /*6.单独设置右边按钮的位置*/
+        .right{
+            left:1010px;
+            top:124px;
+        }
+
+    </style>
+
+
+    <script>
+        window.onload = function(){
+            // 1.获取div标签
+            // 2.列表标签,左右按钮
+            var oDiv = document.getElementById("pic");
+            var oList = document.getElementById("list");
+            var oLeftBtn = document.getElementById("left");
+            var oRightBtn = document.getElementById("right");
+           
+            // 3.修改列表标签的内容为 两份
+            // 3.1获取当前list中的内容
+            var listContent = oList.innerHTML;
+            //3.2 将内容复制两份 重新复制给list
+            oList.innerHTML = listContent + listContent;
+
+            // 4.实现滚动 left 
+            var iLeft = 0;
+            var sSpeed = -5;//默认进来是往左滚动的
+            function fnAnimation(){
+                iLeft += sSpeed;
+
+                //网左滚动
+                if(iLeft < -1000){
+
+                    iLeft = 0;
+                }
+                //往右滚动
+                if(iLeft > 0){
+
+                    iLeft = -1000;
+                }
+                oList.style.left = iLeft + "px";
+            }
+           var oTimer =  setInterval(fnAnimation,30);
+            // 5.判断条件
+            // 6.监听左右两个按钮的动画
+            oLeftBtn.onclick = function(){
+
+               sSpeed = -2; 
+            }
+            oRightBtn.onclick = function(){
+
+                sSpeed = 2;
+            }
+            // 7.鼠标悬浮和移开操作
+            oDiv.onmousemove = function() {//鼠标悬浮干掉计时器
+                clearInterval(oTimer);
+            }
+
+            oDiv.onmouseout = function() {//鼠标移开
+
+                oTimer =  setInterval(fnAnimation,30);
+            }
+
+        }
+    </script>
+
+</head>
+<body>
+
+    <div class="btn">
+        <div class="left" id="left">&lt;</div>
+        <div class="right" id="right">&gt;</div>
+    </div>
+
+    <div class="picbox" id="pic">
+
+        <ul class="list" id="list">
+            <li><a href=""></a><img src="images/goods001.jpg" alt="商品图片"></li>
+            <li><a href=""></a><img src="images/goods002.jpg" alt="商品图片"></li>
+            <li><a href=""></a><img src="images/goods003.jpg" alt="商品图片"></li>
+            <li><a href=""></a><img src="images/goods004.jpg" alt="商品图片"></li>
+            <li><a href=""></a><img src="images/goods005.jpg" alt="商品图片"></li>
+           
+        </ul>
+
+    </div>
+    
+</body>
+</html>

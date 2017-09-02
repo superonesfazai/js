@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>定时器</title>
+    <script>
+
+        window.onload = function() {
+
+            //1.只执行一次
+            function fnTime() {
+                alert("定时器");
+            }
+
+            //setTimeout(fnTime,2000);
+        //    var oTimer =  setTimeout(function() {
+        //         alert("定时器2");
+        //     }, 2000);
+
+                //清除
+                //clearTimeout(oTimer);
+
+        //2.重复执行
+       var iTime = 0;
+       var oTimer2 = setInterval(function(){
+           
+            iTime += 2;
+
+            //如果超过5秒 清除定时器
+            if(iTime > 5){
+                clearInterval(oTimer2);
+            }
+
+             alert("重复执行的定时器" + iTime);
+        },2000)
+
+        
+        
+
+
+
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

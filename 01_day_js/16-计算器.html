@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>16-计算器</title>
+    <script>
+            // 1.搭建界面:input + select + input input label
+            // 2.功能实现
+                // 2.1获取所有的标签
+                // 2.2 获取标签的内容value
+                // 2.3 判断加减,计算结果赋值
+
+        window.onload = function(){
+
+            // 2.1获取所有的标签
+            var oTxt1 = document.getElementById("txt1");
+            var oTxt2 = document.getElementById("txt2");
+
+            // 下拉列表
+            var oList = document.getElementById('symbol');
+
+            //等于号
+            var oBtn = document.getElementById("btn");
+
+            //结果
+            var oResult = document.getElementById('result');
+
+            oBtn.onclick = function (){
+                // 2.2 获取标签的内容value
+                var sTxt1 = oTxt1.value;
+                var sTxt2 = oTxt2.value;
+                var sSymbol = oList.value;
+
+                // 2.3 判断加减,计算结果赋值
+                var iResult = 0;
+                if(sSymbol == 0){//+
+                    // 100 + 33 = 10033
+                   iResult = parseInt(sTxt1) + parseInt(sTxt2);
+                }else if(sSymbol == 1){// -
+
+                    iResult = sTxt1 - sTxt2;
+                }else if(sSymbol == 2){// X
+
+                    iResult = sTxt1 * sTxt2;
+                }else if(sSymbol == 3){// /
+
+                    iResult = sTxt1/sTxt2;
+                }
+
+                //2.4赋值
+                oResult.innerHTML = iResult;
+
+
+            }
+                
+
+        }
+
+    </script>
+</head>
+<body>
+
+<input type="text" id="txt1">
+<select name="" id="symbol">
+    <option value="0">+</option>
+    <option value="1">-</option>
+    <option value="2">x</option>
+    <option value="3">/</option>
+</select>
+<input type="text" id="txt2">
+<input type="button" id="btn" value="=">
+<label id="result" >结果</label>
+    
+</body>
+</html>

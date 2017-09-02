@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>去重</title>
+    <script>    
+        window.onload = function(){
+
+            var aOneArray = [1,2,3,3,4,5,6,4,5,6,3,2,1];
+
+            var oTwoArray = [];
+            for(var i = 0; i < aOneArray.length; i++){
+            
+                //1.获取元素 最先的角标位置
+                var iIndex = aOneArray.indexOf(aOneArray[i]);
+
+                //document.write(iIndex);
+
+                //2.判断相同的角标不要了
+                if(i == iIndex){//需要
+                    document.write(iIndex);
+                    var sStr = aOneArray[iIndex];
+                    oTwoArray.push(sStr);
+                }
+
+            }
+
+            document.write("<br>"+oTwoArray);
+
+           
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

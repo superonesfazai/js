@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>05-时钟</title>
+    <script>
+        window.onload = function(){
+
+            var oDiv = document.getElementById("time");
+
+            //4.优化 将数字的星期转换成汉字
+            function fnChangeNumber(number){
+                var sResult = "";
+                switch (number) {
+                    case 0:
+                        sResult = '天';
+                        break;
+                    case 1:
+                        sResult = '一';
+                        break;
+                    case 2:
+                        sResult = '二';
+                        break;
+                    case 3:
+                        sResult = '三';
+                        break;
+                    case 4:
+                        sResult = '四';
+                        break;
+                    case 5:
+                        sResult = '五';
+                        break;
+                    case 6:
+                        sResult = '六';
+                        break;
+                
+                    default:
+                        break;
+                }
+
+                return sResult;
+            }
+
+            //4.2 将0-9的数字 前面加0 
+            function fnAddNumberZero(number) {
+
+                if(number > 9){
+
+                    return number;
+                }else{
+
+                    return "0" + number;
+                }
+            }
+
+
+            //1.获取当前时间
+            function fnGetCurrentTime (){
+
+            // 1.获取本地的时间
+            var iTime = new Date();
+            // 2.拼接 年 月 日 星期 时 分 秒
+
+            //2.1年
+            var iYear = iTime.getFullYear();
+           //2.2 月份 大坑:0-11
+           var iMonth = iTime.getMonth()+1;
+           //2.3日
+           var iDay = iTime.getDate();
+
+           //2.4星期
+           var iWeek = iTime.getDay();
+
+           //2.5时
+           var iHour = iTime.getHours();
+           //2.6分
+           var iMinute = iTime.getMinutes();
+           //2.7秒
+           var iSecond = iTime.getSeconds();
+
+            oDiv.innerHTML = iYear+"年"+fnAddNumberZero(iMonth)+"月"+iDay+"日"+"星期"+fnChangeNumber(iWeek)+fnAddNumberZero(iHour)+'时'
++iMinute+'分'+fnAddNumberZero(iSecond)+'秒';
+            }
+
+            fnGetCurrentTime();
+            //3.时时更新时间, 重复定时器
+            setInterval(fnGetCurrentTime,1000)
+        }
+    </script>
+</head>
+<body>
+    <div id="time">2017年</div>
+    
+</body>
+</html>

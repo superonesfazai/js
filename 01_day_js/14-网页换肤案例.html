@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>14-网页换肤案例</title>
+    <script>
+        window.onload = function(){
+
+            // 1.获取两个按钮
+            var oRedBtn = document.getElementById("btn1");
+            var oGreenBtn = document.getElementById("btn2");
+            var oBody = document.body;
+            // 2.分别监听改变颜色
+            // oRedBtn.onclick = function(){
+
+            //     oBody.style.backgroundColor = "red";
+            // }
+            // oGreenBtn.onclick = function(){
+
+            //     oBody.style.backgroundColor = "green";  
+            // }
+
+            //3.优化封装
+            function fnChangeColor(bodyColor){
+
+                oBody.style.backgroundColor = bodyColor;
+            }
+
+            oRedBtn.onclick = function (){
+
+                fnChangeColor('red');
+            }
+            oGreenBtn.onclick = function(){
+
+                fnChangeColor('green');
+            }
+
+        }
+    </script>
+</head>
+<body>
+
+    <input type="button" value="红色皮肤" id="btn1">
+    <input type="button" value="绿色皮肤" id="btn2">
+    
+</body>
+</html>

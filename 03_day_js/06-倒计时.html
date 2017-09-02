@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06-倒计时</title>
+
+    <script>
+        window.onload = function() {
+
+            var oDiv = document.getElementById("time");
+            
+            fnAnimation();
+            setInterval(fnAnimation,1000);
+
+
+            function fnAnimation(){
+
+                 // 1.获取当前的时间
+            var iCurrentTime = new Date();
+            // 2.获取将来活动的时间: 月份的坑 0-11
+            var iFutureTime = new Date(2017,9,1,0,0,0);
+            // 3.获得时间差:毫秒
+            var iResult = parseInt(iFutureTime - iCurrentTime)/1000;
+
+            // 4.把秒数 换算成 天 时  分 秒
+            var iDay =  parseInt(iResult/86400);
+            var iHour = parseInt(iResult%86400/3600);
+            var iMinute = parseInt(iResult%86400%3600/60);
+            var iSecond = parseInt(iResult%60);
+
+            oDiv.innerHTML = "距离国庆节放假还有"+iDay+"天" + iHour+"时"+iMinute+"分"+iSecond +"秒";
+            }
+           
+        }
+    </script>
+
+</head>
+<body>
+    
+    <div id="time"></div>
+</body>
+</html>
