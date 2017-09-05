@@ -11,14 +11,13 @@
 
             var oTwoArray = [];
             for(var i = 0; i < aOneArray.length; i++){
-            
                 //1.获取元素 最先的角标位置
                 var iIndex = aOneArray.indexOf(aOneArray[i]);
 
                 //document.write(iIndex);
 
                 //2.判断相同的角标不要了
-                if(i === iIndex){//需要
+                if(i === iIndex){   //需要
                     document.write(iIndex);
                     var sStr = aOneArray[iIndex];
                     oTwoArray.push(sStr);
