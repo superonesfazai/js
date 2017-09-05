@@ -18,7 +18,6 @@
         }
 
         #list li {
-
             height: 50px;
             border-bottom: 1px dotted lightgray;
             line-height: 50px;
@@ -27,32 +26,26 @@
 
     <script>
         window.onload = function(){
-            // 1.获取列表的标签
+            // 1. 获取列表的标签
             var oList = document.getElementById("list");
 
-            // 2.数组的数据
-            var aDataArray = ["美人鱼","大圣归来","速度与激情","超人","七龙珠"];
+            // 2. 数组的数据
+            var aDataArray = ["美人鱼", "大圣归来", "速度与激情", "超人", "七龙珠"];
 
-            // 3.组合数据
+            // 3. 组合数据
             var sStr = "";
-            for (var index = 0; index < aDataArray.length; index++) {
+            for(var index = 0; index < aDataArray.length; index++) {
                 var element = aDataArray[index];
-
                 sStr = "<li>" + element + "</li>"+sStr;
-                
             }
 
-            // 4.复制给列表
+            // 4. 复制给列表
             oList.innerHTML = sStr;
-
         }
     </script>
 </head>
 <body>
-
     <ul id="list">
-
     </ul>
-    
 </body>
 </html>

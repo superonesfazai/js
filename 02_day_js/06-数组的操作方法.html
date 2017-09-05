@@ -7,36 +7,44 @@
     <title>06-数组的操作方法</title>
     <script>
         window.onload = function(){
-
             var aOneArray = [1,2,3,4,5,6,'abc'];
 
-            //1.获取数组的长度,个数
+            //1. 获取数组的长度,个数
             var iLength = aOneArray.length;
             //alert(iLength);
+            console.log(iLength)
+            console.log(Array.prototype.length)
 
-            //2.获取元素 修改
+            //2. 获取元素 修改
             // aOneArray[3] = 8;
+            console.log(aOneArray[3])
             
 
-            //3.删除和增加 在最后一个元素后面
+            //3. 删除和增加 在最后一个元素后面
             aOneArray.push(6);
             // aOneArray.pop();//删除最后一个元素
+            // aOneArray.shift();  //删除最开始的那个元素
+            // aOneArray.unshift('xxx');  //在数组最开头添加元素
 
-            //4.替换元素
+            //4. 替换元素
+            // aOneArray.splice(pos, 1)    //通过索引的位置删除某个元素
                             //位置 删除几个 ,增加的内容
-           // aOneArray.splice(2,3,"张三","李四","王五");
+           // aOneArray.splice(2, 3, "张三", "李四", "王五");
 
-            //5.颠倒顺序
+            //5. 颠倒顺序
             //aOneArray.reverse();
 
-            //6.将数组分割成字符串
-           var sStr =  aOneArray.join('=');
-        //    alert(sStr);
+            //6. 将数组分割成字符串
+            // 记住: join('')出来不带','
+            var sStr =  aOneArray.join('=');
+            // alert(sStr);
 
-           //7.元素第一次出现的角标
-           var iIndex =  aOneArray.indexOf(6);
+            //7. 元素第一次出现的角标
+            var iIndex =  aOneArray.indexOf(6);
             alert(iIndex);
             alert(aOneArray);
+
+            console.log(Object.keys(Array.prototype[Symbol.unscopables]))
 
         }
     </script>
