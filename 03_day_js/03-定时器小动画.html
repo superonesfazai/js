@@ -13,45 +13,38 @@
 
             position: absolute;
             top: 200px;
-            left: 0px;
+            left: 0;
         }
 </style>
-
     <script>
-            window.onload = function(){
+        window.onload = function(){
+            //1. 获取div
+            var oDiv = document.getElementById("box");
 
-                    // 1.获取div
-                    var oDiv = document.getElementById("box");
+            //2. 修改left
 
-                    // 2.修改left
-                   
-                    // 3.重复执行的定时器
-                    var iLeft = 0;
-                    var sSpeed = 0;
-                    setInterval(function(){
+            //3. 重复执行的定时器
+            var iLeft = 0;
+            var sSpeed = 0;
+            // interval的意思的是时间间隔
+            setInterval(function(){
+                iLeft += sSpeed;
+                if(iLeft > 300){//最多300 ,往左移动
+                    sSpeed = -2;
+                }
 
-                         iLeft += sSpeed;
-                         if(iLeft > 300){//最多300 ,往左移动
+                if(iLeft <= 0){//最小就是0 ,往右移动
+                    sSpeed = 2;
+                }
+                //注意点: 像素单位一定要加
+                oDiv.style.marginLeft = iLeft + "px";
+            }, 30);
 
-                            sSpeed = -2;
-                         };
-
-                         if(iLeft <= 0){//最小就是0 ,往右移动
-
-                            sSpeed = 2;
-                         }
-
-                         oDiv.style.left = iLeft + "px";
-
-                    },30);
-
-            }
+        }
     </script>
-
 </head>
 <body>
     <!-- 1.搭建界面 -->
     <div id="box" class="redBox"></div>
-    
 </body>
 </html>

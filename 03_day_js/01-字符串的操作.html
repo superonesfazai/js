@@ -8,10 +8,15 @@
     <script>
         window.onload = function(){
             // 1.拼接字符串 +
-            var sName = "张三"
+            var sName = "张三";
             var iAge = 28;
             var iHeight = 175;
             //alert(sName + iAge +"岁了"+iHeight+"cm");
+
+            var fOne = 0.1;
+            var fTwo = 0.2;
+
+            alert((fOne * 100 + fTwo * 100)/100);
 
             //2.类型转换
             //3.将字符串分割成数组 split()
@@ -36,7 +41,7 @@
             var aSecondArray =  aNewArray.reverse();
             var sNew = aSecondArray.join(",");
             
-            //优化写法
+            //优化写法(连写)
             sNew = sArray.split("").reverse().join(",");
             alert(sNew);
 

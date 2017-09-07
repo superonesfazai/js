@@ -8,31 +8,30 @@
 
     <script>
         window.onload = function() {
-
             var oDiv = document.getElementById("time");
-            
-            fnAnimation();
-            setInterval(fnAnimation,1000);
 
+            fnAnimation();
+            setInterval(fnAnimation, 1000);
 
             function fnAnimation(){
+                // 1.获取当前的时间
+                var iCurrentTime = new Date();
+                //console.log(iCurrentTime)   // 格式: Thu Sep 07 2017 12:21:15 GMT+0800 (CST)
+                // 2.获取将来活动的时间: 月份的坑 0-11 月份减1
+                var iFutureTime = new Date(2017,9,1,0,0,0);
 
-                 // 1.获取当前的时间
-            var iCurrentTime = new Date();
-            // 2.获取将来活动的时间: 月份的坑 0-11
-            var iFutureTime = new Date(2017,9,1,0,0,0);
-            // 3.获得时间差:毫秒
-            var iResult = parseInt(iFutureTime - iCurrentTime)/1000;
+                //console.log(iFutureTime-iCurrentTime)   // 格式: 2029029212
+                // 3.获得时间差:毫秒
+                var iResult = parseInt(iFutureTime - iCurrentTime)/1000;
 
-            // 4.把秒数 换算成 天 时  分 秒
-            var iDay =  parseInt(iResult/86400);
-            var iHour = parseInt(iResult%86400/3600);
-            var iMinute = parseInt(iResult%86400%3600/60);
-            var iSecond = parseInt(iResult%60);
+                // 4.把秒数 换算成 天 时  分 秒
+                var iDay =  parseInt(iResult / 86400);
+                var iHour = parseInt((iResult % 86400) / 3600);
+                var iMinute = parseInt(((iResult % 86400) % 3600) / 60);
+                var iSecond = parseInt(iResult % 60);
 
-            oDiv.innerHTML = "距离国庆节放假还有"+iDay+"天" + iHour+"时"+iMinute+"分"+iSecond +"秒";
+                oDiv.innerHTML = "距离国庆节放假还有"+iDay+"天" + iHour+"时"+iMinute+"分"+iSecond +"秒";
             }
-           
         }
     </script>
 
