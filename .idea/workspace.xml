@@ -4,15 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/../PythonDoc/python网络数据采集/用爬虫测试网站/play_with_scrapy_module/源码相关/CrawlSpider(源码参考-scrapy.spider.CrawlSpider).py" description="from urllib.request import (Request,)" line="15" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3877f715-6f03-4b0a-b7e3-4431aee1a288" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/03_day_js/练习/images/timg_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/03_day_js/练习/images/walking.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/03_day_js/练习/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/03_day_js/练习/练习001.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/03_day_js/练习/练习002.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/03_day_js/练习/练习003.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3877f715-6f03-4b0a-b7e3-4431aee1a288" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,11 +34,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="练习002.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="练习002.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/03_day_js/练习/练习002.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
               <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02-定时器.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/03_day_js/02-定时器.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="06-倒计时.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/03_day_js/06-倒计时.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -631,13 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03_day_js/02-定时器.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/03_day_js/03-定时器小动画.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -650,13 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="134" column="24" lean-forward="false" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03_day_js/06-倒计时.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -695,6 +693,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03_day_js/02-定时器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03_day_js/06-倒计时.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
           <folding />
         </state>
       </provider>
