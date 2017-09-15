@@ -4,23 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/../PythonDoc/python网络数据采集/用爬虫测试网站/play_with_scrapy_module/源码相关/CrawlSpider(源码参考-scrapy.spider.CrawlSpider).py" description="from urllib.request import (Request,)" line="15" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3877f715-6f03-4b0a-b7e3-4431aee1a288" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js使用方式/js/out.js" afterPath="$PROJECT_DIR$/js使用方式(三种)/js/out.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js使用方式/js外链式.html" afterPath="$PROJECT_DIR$/js使用方式(三种)/js外链式.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js使用方式/js嵌入式.html" afterPath="$PROJECT_DIR$/js使用方式(三种)/js嵌入式.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js使用方式/js行内式.html" afterPath="$PROJECT_DIR$/js使用方式(三种)/js行内式.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js函数/return关键字.html" afterPath="$PROJECT_DIR$/js函数/return关键字.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js函数/函数的定义和执行.html" afterPath="$PROJECT_DIR$/js函数/函数的定义和执行.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js函数/函数的预编译.html" afterPath="$PROJECT_DIR$/js函数/函数的预编译.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js函数/匿名函数.html" afterPath="$PROJECT_DIR$/js函数/匿名函数.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js变量与数据类型/js字符串/字符串的操作.html" afterPath="$PROJECT_DIR$/js变量与数据类型/js字符串/字符串的操作.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js变量与数据类型/js数组/数组的操作方法.html" afterPath="$PROJECT_DIR$/js变量与数据类型/js数组/数组的操作方法.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js变量与数据类型/js类型转换/类型的转换.html" afterPath="$PROJECT_DIR$/js变量与数据类型/js类型转换/类型的转换.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js案例/js时间相关/定时器小动画.html" afterPath="$PROJECT_DIR$/js案例/js时间相关/定时器小动画.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js案例/网页换肤案例.html" afterPath="$PROJECT_DIR$/js案例/网页换肤案例.html" />
-    </list>
+    <list default="true" id="3877f715-6f03-4b0a-b7e3-4431aee1a288" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
