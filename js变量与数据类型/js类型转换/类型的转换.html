@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>10-类型的转换</title>
+    <title>类型的转换</title>
     <script>
         window.onload = function(){
-
             //1.parseInt
             var iOne = 100;
             var sStr = "200";
@@ -29,15 +28,15 @@
             //alert(fThree - fTwo);
 
             //4.如果转换类型不成功 结果就是NaN  not  a number
-            var sNumber = "123abc";//123
-            var sNumber2 = "abc123";//NaN
-            //alert(parseInt(sNumber2));
+            var sNumber = "123abc";     //return -> 123
+            var sNumber2 = "abc123";    //return -> NaN
+            alert(parseInt(sNumber));
 
             //5. isNaN 判断是否是纯数字
-            alert(isNaN(sNumber));//不是纯数字 true
-            alert(isNaN("123"));//是纯数字  false
+            alert(isNaN(sNumber));      //不是纯数字 true
+            alert(isNaN("123"));        //是纯数字  false
 
-            if(isNaN(sNumber)){//不是纯数字
+            if(isNaN(sNumber)){         //不是纯数字
                 alert("请输出纯数字");
             }else{
                 alert("书写正确");
